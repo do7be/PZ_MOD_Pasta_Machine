@@ -16,8 +16,8 @@ module PastaMachine
     recipe Make Pasta
     {
        keep PastaMachine.PastaMachine,
-       Water=1,
-       Flour=1,
+       Water=2,
+       Flour=2,
        Salt;1,
 
        Result:PastaMachine.RawPasta,
@@ -26,7 +26,7 @@ module PastaMachine
        OnGiveXP:Recipe.OnGiveXP.Cooking10,
     }
 
-    /* TODO: 生地と同じ量を生成できるようにする。生パスタのまま鍋に入れられるようにする */
+    /* TODO: 生パスタのまま鍋に入れられるようにする */
     item RawPasta
     {
         Weight	=	2,
@@ -41,14 +41,10 @@ module PastaMachine
         Lipids = 16,
         Calories = 3360,
         WorldStaticModel = Pasta,
-        /* TODO: 加熱した際に量をいい感じにする */
         ReplaceOnCooked     =   Base.Pasta,
         IsCookable	=	    true,
 		DangerousUncooked	=	TRUE,
-        /* TODO: このへんちゃんと入れる */
-        MinutesToBurn   =   50,
         MinutesToCook   =   20,
-        UnhappyChange   =   20,
         DaysFresh 		= 	4,
         DaysTotallyRotten 	= 	7,
         BadInMicrowave = true,
