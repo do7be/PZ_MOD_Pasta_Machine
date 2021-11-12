@@ -26,7 +26,6 @@ module PastaMachine
        OnGiveXP:Recipe.OnGiveXP.Cooking10,
     }
 
-    /* TODO: 生パスタのまま鍋に入れられるようにする */
     item RawPasta
     {
         Weight	=	2,
@@ -48,8 +47,19 @@ module PastaMachine
         DaysFresh 		= 	4,
         DaysTotallyRotten 	= 	7,
         BadInMicrowave = true,
+        EvolvedRecipe = PastaPot:10,
     }
 
+    recipe Place Raw Pasta in Cooking Pot
+	{
+	   PastaMachine.RawPasta;10,
+	   destroy WaterPot,
 
+	   Result:WaterPotPasta,
+	   Time:50.0,
+	   OnCreate:Recipe.OnCreate.AddBaseIngredientToCookingVessel,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
 }
 
