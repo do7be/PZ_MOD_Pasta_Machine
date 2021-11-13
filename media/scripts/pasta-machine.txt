@@ -13,7 +13,7 @@ module PastaMachine
 		Icon	=	Bowl,
 	}
 
-    recipe Make Pasta
+    recipe Make Fresh Pasta
     {
        keep PastaMachine.PastaMachine,
        Water=2,
@@ -30,7 +30,7 @@ module PastaMachine
     {
         Weight	=	2,
         Type	=	Food,
-        DisplayName	=	Raw Pasta,
+        DisplayName	=	Fresh Pasta,
         Icon	=	SpagettiRaw,
         HungerChange    =   -60,
         UnhappyChange   =   40,
@@ -40,6 +40,7 @@ module PastaMachine
         Lipids = 16,
         Calories = 3360,
         WorldStaticModel = Pasta,
+        /* TODO: 生パスタを消費した状態で加熱すると量が満タンのパスタになるがどうしようもなさそう */
         ReplaceOnCooked     =   Base.Pasta,
         IsCookable	=	    true,
 		DangerousUncooked	=	TRUE,
@@ -48,6 +49,7 @@ module PastaMachine
         DaysTotallyRotten 	= 	7,
         BadInMicrowave = true,
         EvolvedRecipe = PastaPot:10,
+        FoodType    =   Pasta,
     }
 
     recipe Place Fresh Pasta in Cooking Pot
