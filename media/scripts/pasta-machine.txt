@@ -10,7 +10,7 @@ module PastaMachine
 		Weight	=	1,
 		Type	=	Normal,
 		DisplayName	=	Pasta Machine,
-		Icon	=	Bowl,
+		Icon	=	PastaMachine,
 	}
 
     recipe Make Fresh Pasta
