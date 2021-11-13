@@ -1,0 +1,4 @@
+ItemName_JP = {
+	ItemName_PastaMachine.PastaMachine = "パスタマシン",
+	ItemName_PastaMachine.FreshPasta = "生パスタ",
+}
