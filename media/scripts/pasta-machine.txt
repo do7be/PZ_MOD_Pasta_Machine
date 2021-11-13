@@ -20,13 +20,13 @@ module PastaMachine
        Flour=2,
        Salt;1,
 
-       Result:PastaMachine.RawPasta,
+       Result:PastaMachine.FreshPasta,
        Time:50.0,
        Category:Cooking,
        OnGiveXP:Recipe.OnGiveXP.Cooking10,
     }
 
-    item RawPasta
+    item FreshPasta
     {
         Weight	=	2,
         Type	=	Food,
@@ -50,9 +50,9 @@ module PastaMachine
         EvolvedRecipe = PastaPot:10,
     }
 
-    recipe Place Raw Pasta in Cooking Pot
+    recipe Place Fresh Pasta in Cooking Pot
 	{
-	   PastaMachine.RawPasta;10,
+	   PastaMachine.FreshPasta;10,
 	   destroy WaterPot,
 
 	   Result:WaterPotPasta,
