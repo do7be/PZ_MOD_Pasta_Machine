@@ -63,5 +63,17 @@ module PastaMachine
 	   Category:Cooking,
 	   OnGiveXP:Recipe.OnGiveXP.None,
 	}
+
+    recipe Place Fresh Pasta in Saucepan
+	{
+	   PastaMachine.FreshPasta;10,
+	   destroy WaterSaucepan,
+
+	   Result:WaterSaucepanPasta,
+	   Time:50.0,
+	   OnCreate:Recipe.OnCreate.AddBaseIngredientToCookingVessel,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
 }
 

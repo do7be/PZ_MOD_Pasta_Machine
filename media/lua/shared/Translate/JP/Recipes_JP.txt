@@ -1,4 +1,5 @@
 Recipe_JP = {
 	Recipe_Make_Fresh_Pasta = "生パスタを作る",
 	Recipe_Place_Fresh_Pasta_in_Cooking_Pot = "生パスタを調理鍋に入れる",
+	Recipe_Place_Fresh_Pasta_in_Saucepan = "生パスタをソースパンに入れる",
 }
