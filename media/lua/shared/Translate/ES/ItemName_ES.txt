@@ -1,0 +1,4 @@
+ItemName_ES = {
+	ItemName_PastaMachine.PastaMachine = "Máquina de pastas",
+	ItemName_PastaMachine.FreshPasta = "Pasta",
+}
