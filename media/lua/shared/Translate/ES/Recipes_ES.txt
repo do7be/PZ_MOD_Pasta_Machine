@@ -1,5 +1,5 @@
 Recipe_ES = {
 	Recipe_Make_Fresh_Pasta = "Hacer pasta fresca",
-	Recipe_Place_Fresh_Pasta_in_Cooking_Pot = "Colocar pasta fresca en un sartén",
+	Recipe_Place_Fresh_Pasta_in_Cooking_Pot = "Colocar pasta fresca en una olla",
 	Recipe_Place_Fresh_Pasta_in_Saucepan = "Colocar pasta fresca en una cacerola",
 }
