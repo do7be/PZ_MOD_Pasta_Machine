@@ -1,0 +1,5 @@
+Recipe_PTBR = {
+	Recipe_Make_Fresh_Pasta = "Esticar Massa Fresca",
+	Recipe_Place_Fresh_Pasta_in_Cooking_Pot = "Colocar Massa Fresca na Panela",
+	Recipe_Place_Fresh_Pasta_in_Saucepan = "Colocar Massa Fresca no Tacho",
+}
